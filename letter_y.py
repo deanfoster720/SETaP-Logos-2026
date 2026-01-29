@@ -51,9 +51,15 @@ def draw_y_coordinates(x,y):
     t.goto(0,0)    
 
 def draw_y(x,y):
+    t.fillcolor("lightblue")
+    t.begin_fill()
     t.penup()
     t.goto(x, y)
+    t.setheading(0)
     t.pendown()
+    
+    start_x, start_y = x, y  # Save starting position
+    
     t.left(135)
     t.forward(50)
 
@@ -81,6 +87,11 @@ def draw_y(x,y):
     t.left(45)
     t.forward(50)
 
+    t.goto(start_x, start_y)  # Explicitly return to starting position
+    
+    t.end_fill()
+    t.penup()
+    t.goto(0,0)
 
 #draw_y_coordinates(x,y)
 draw_y(x,y)
