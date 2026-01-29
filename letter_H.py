@@ -1,7 +1,8 @@
 import turtle
 t = turtle.Turtle()
-t.color("black", "white")
+t.color("black", "lightblue")
 t.pensize(5)
+t.begin_fill()
 # Draw the left vertical bar
 t.left(90)
 t.forward(100)
@@ -33,5 +34,8 @@ t.left(90)
 t.forward(40)
 t.right(90)
 t.forward(20)
+t.end_fill()
+
+
 
 turtle.done()
