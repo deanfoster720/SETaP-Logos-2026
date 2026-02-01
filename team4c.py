@@ -32,6 +32,8 @@ def drawR(startx, starty):
     t.penup()
     t.goto(startx, starty)
     t.pendown()
+    t.fillcolor("lightblue")
+    t.begin_fill()
 
 
     t.setheading(90)
@@ -62,6 +64,7 @@ def drawR(startx, starty):
     t.right(90)
     t.forward(20)
     t.circle(-25, 165)
+    t.end_fill()
 
 def drawY(start_x,start_y):
     t.fillcolor("lightblue")
@@ -151,6 +154,8 @@ def drawF(startx, starty):
     t.penup()
     t.goto(startx, starty)
     t.pendown()
+    t.fillcolor("lightblue")
+    t.begin_fill()
     t.setheading(360)
     #drawing straight F
     t.left(90)
@@ -181,6 +186,7 @@ def drawF(startx, starty):
     t.forward(40)
     t.right(90)
     t.forward(20)
+    t.end_fill()
 
 def drawHanger(startx, starty):
     
